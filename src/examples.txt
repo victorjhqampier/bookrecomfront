@@ -1,0 +1,184 @@
+<main class="container-xl mt-2">
+    <ol class="breadcrumb mb-2">        
+        <li class="breadcrumb-item active">Tendencias</li>
+    </ol>
+    <div class="row">
+      <div class="col-12 col-sm-6">
+          <div class="card mb-2" style="max-width: 546px;">
+            <div class="row g-0">
+              <div class="col-md-3 text-center p-2">
+                <img src="https://i.imgur.com/Tw3FWlR.jpeg" class="img-fluid bg-secondary thumb-post-img rounded shadow" alt="...">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-12 col-sm-6">
+          <div class="card mb-2" style="max-width: 546px;">
+            <div class="row g-0">
+              <div class="col-md-3 text-center p-2">
+                <img src="https://i.imgur.com/9Z7xLKH.jpeg" class="img-fluid bg-secondary thumb-post-img rounded shadow" alt="...">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+      <div class="col-12 col-sm-6">
+          <div class="card mb-2" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-3 text-center p-2">
+                <img src="/img/logo.82b9c7a5.png" class="img-fluid bg-secondary thumb-post-img rounded shadow" alt="...">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-12 col-sm-6">
+          <div class="card mb-2" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-3 text-center p-2">
+                <img src="/img/logo.82b9c7a5.png" class="img-fluid rounded shadow" alt="...">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-12 col-sm-6">
+          <div class="card mb-2" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-3">
+                <img src="/img/logo.82b9c7a5.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  <!--div style="height: 66vh;"></div-->      
+</main>
+
+----
+
+
+  <main class="container-xl mt-2">
+    <ol class="breadcrumb mb-2">        
+        <li class="breadcrumb-item active">Tendencias</li>
+    </ol>
+    <div class="row">
+      <div class="col-12 col-sm-6">
+          <div class="card mb-2" style="max-width: 600px;">
+              <div class="row g-0">
+                  <div class="col-md-2 text-center p-2">
+                      <img src="https://i.imgur.com/DfjK0VG.jpg" class="img-fluid bg-secondary thumb-post-img rounded shadow" alt="..." />
+                  </div>
+                  <div class="col-md-10">
+                      <div class="card-body p-2">
+                          <h6 class="card-title mb-0">EDUCACIÓN AMBIENTAL: APRENDIENDO JUNTOS EDUCACIÓN AMBIENTAL: APRENDIENDO JUNTOS</h6>
+                          <small class="mt-3">&middot; Andrés, Arias Lizares &middot; Autor</small>
+                          <small class="m-0"><p>Historia del Perú: época prehispánica, período del imperio de los Incas, c.a.</p></small>
+                          <div class="d-flex w-100 justify-content-between" style="margin-top: -0.8em;">
+                              <small>2015, Primera edición</small>
+                              <small>1000 Vistas</small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 col-sm-6">
+          <div class="card mb-2" style="max-width: 600px;">
+              <div class="row g-0">
+                  <div class="col-md-2 text-center p-2">
+                      <img src="https://i.imgur.com/cqwo7RC.jpg" class="img-fluid bg-secondary thumb-post-img rounded shadow" alt="..." />
+                  </div>
+                  <div class="col-md-10">
+                      <div class="card-body p-2">
+                          <h6 class="card-title mb-0">EDUCACIÓN AMBIENTAL: APRENDIENDO JUNTOS EDUCACIÓN AMBIENTAL: APRENDIENDO JUNTOS</h6>
+                          <small class="mt-3">&middot; Andrés, Arias Lizares &middot; Autor</small>
+                          <small class="m-0"><p>Historia del Perú: época prehispánica, período del imperio de los Incas, c.a.</p></small>
+                          <div class="d-flex w-100 justify-content-between" style="margin-top: -0.8em;">
+                              <small>2015, Primera edición</small>
+                              <small>1000 Vistas</small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+  </div>
+  <!--div style="height: 66vh;"></div-->      
+</main>      
+
+
+-----buscar
+<template>
+<main class="container-sm mt-2">
+    <ol class="breadcrumb mb-2">        
+        <li class="breadcrumb-item active">Resultados para: {{request}}</li>
+    </ol>
+    <!--button class="btn btn-primary" @click="ax_search_book()">buscaar</button-->
+    <div class="row">
+        <div class="col-12 col-sm-8">
+            <div class="row">
+                <div class="col-12 col-sm-12" v-for="libro in books" v-bind:key="libro">
+                    <div class="card mb-2">
+                        <div class="row g-0">
+                            <div class="col-md-2 text-center p-2">
+                                <img :src="libro.image" class="img-fluid bg-secondary thumb-post-img rounded shadow" :alt="libro.title" />
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body p-2">
+                                    <h5 class="card-title text-white mb-0">{{libro.title.toUpperCase() + '. '+libro.subtitle.toUpperCase()}}</h5>
+                                    <small class="mt-3 h6">&middot; {{libro.autor}} &middot; {{libro.autrol}}</small>
+                                    <small class="m-0"><p>{{libro.topics}}</p></small>
+                                    <div class="d-flex w-100 justify-content-between" style="margin-top: -0.8em;">
+                                    <small class="card-text">{{libro.released}}</small>
+                                    <small class="card-text">{{libro.views}} vistas</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <div class="col-12 col-sm-4">
+            <ol class="breadcrumb mb-2">        
+                <li class="breadcrumb-item">Publicidad</li>
+           </ol>
+        </div>
+    </div>   
+</main> 
+</template>

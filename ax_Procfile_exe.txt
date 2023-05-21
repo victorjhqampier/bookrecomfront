@@ -1,0 +1,20 @@
+create -> Procfile
+web: npm run serve
+
+heroku buildpacks:add heroku/nodejs
+heroku buildpacks:add https://github.com/heroku/heroku-buildpack-static
+
+doc->https://www.youtube.com/watch?v=6ESNnWJFrIM
+
+create -> ststic.json
+{
+    "root":"dist",
+    "clean_url":true,
+    "routes":{
+        "/**":"index.html"
+    }
+}
+
+package.json
+"material-design-icons": "^3.0.1",
+    "materialize-css": "^1.0.0-rc.2",
