@@ -5,6 +5,7 @@ WORKDIR /app
 
 COPY package*.json ./
 # COPY package.json ./
+RUN npx browserslist@latest --update-db
 RUN npm install
 
 COPY . .
