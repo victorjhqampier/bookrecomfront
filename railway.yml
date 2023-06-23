@@ -1,0 +1,14 @@
+env: node
+
+plugins:
+  - name: "@railway/static"
+
+build:
+  - name: "Install Dependencies"
+    command: "npm ci"
+
+release:
+  - command: "npm run build"
+
+start:
+  - command: "npm run serve"
