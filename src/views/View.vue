@@ -133,7 +133,8 @@ export default {
             arrCopy:[],
             viewLoading:false,
             recLoading:true,
-            arrRecom:[]
+            arrRecom:[],
+            arrPreRecom:[]
         }
     },
     methods:{
@@ -143,8 +144,8 @@ export default {
             await this.axios.post('/books/recom/jaccard-index',{"idTitle":idTitle})
             .then(response=>{
                 if(response.data.success == 1){
-                    response.data.data.forEach(x => { x.idTitle = btoa(x.idTitle), x.cImage = x.cImage.length === 0?"https://i.pinimg.com/originals/c4/5a/d4/c45ad4aa77906c54c8bc52930cb08f01.jpg": x.cImage});
-                    this.arrRecom = response.data.data;
+                    // response.data.data.forEach(x => { x.idTitle = btoa(x.idTitle), x.cImage = x.cImage.length === 0?"https://i.pinimg.com/originals/c4/5a/d4/c45ad4aa77906c54c8bc52930cb08f01.jpg": x.cImage});
+                    this.arrPreRecom = response.data.data;
                 }
                 else{                    
                     console.log(response.data.message);
@@ -153,14 +154,14 @@ export default {
             .catch(error=>{                
                 console.log(error.response)
             });            
-            this.recLoading = true;        
+                  
         },
         async ax_get_recom_classification(idTitle){               
             await this.axios.post('/books/recom/classification',{"idTitle":idTitle})
             .then(response=>{
                 if(response.data.success == 1){
-                    response.data.data.forEach(x => { x.idTitle = btoa(x.idTitle), x.cImage = x.cImage.length === 0?"https://i.pinimg.com/originals/c4/5a/d4/c45ad4aa77906c54c8bc52930cb08f01.jpg": x.cImage});
-                    this.arrRecom = this.arrRecom.concat(response.data.data);
+                    // response.data.data.forEach(x => { x.idTitle = btoa(x.idTitle), x.cImage = x.cImage.length === 0?"https://i.pinimg.com/originals/c4/5a/d4/c45ad4aa77906c54c8bc52930cb08f01.jpg": x.cImage});
+                    this.arrPreRecom = this.arrPreRecom.concat(response.data.data);
                 }
                 else{                    
                     console.log(response.data.message);
@@ -174,16 +175,33 @@ export default {
             await this.axios.post('/books/recom/co-responsibility',{"idTitle":idTitle})
             .then(response=>{
                 if(response.data.success == 1){
-                    response.data.data.forEach(x => { x.idTitle = btoa(x.idTitle), x.cImage = x.cImage.length === 0?"https://i.pinimg.com/originals/c4/5a/d4/c45ad4aa77906c54c8bc52930cb08f01.jpg": x.cImage});
-                    this.arrRecom = this.arrRecom.concat(response.data.data);
+                    // response.data.data.forEach(x => { x.idTitle = btoa(x.idTitle), x.cImage = x.cImage.length === 0?"https://i.pinimg.com/originals/c4/5a/d4/c45ad4aa77906c54c8bc52930cb08f01.jpg": x.cImage});
+                    this.arrPreRecom = this.arrPreRecom.concat(response.data.data);
                 }
                 else{                    
                     console.log(response.data.message);
-                }                
+                }                         
             })
             .catch(error=>{                
                 console.log(error.response)
             });       
+        },
+        ax_process_recom(){
+            try { 
+                this.arrPreRecom = this.arrPreRecom.filter((obj, index, self) =>
+                    index === self.findIndex((o) => o.idTitle === obj.idTitle)
+                );                 
+                this.arrPreRecom.forEach(x => {
+                    x.idTitle = btoa(x.idTitle);
+                    x.cImage = x.cImage && x.cImage.length === 0 ? "https://i.pinimg.com/originals/c4/5a/d4/c45ad4aa77906c54c8bc52930cb08f01.jpg" : x.cImage;
+                });
+                this.recLoading = true;                
+                this.arrRecom = this.arrPreRecom; 
+                this.arrPreRecom=[];                
+            } catch (error) {
+                this.recLoading = true;  
+                console.log(error);
+            }       
         },
         async ax_get_book_api(text){     
             this.viewLoading = true;
@@ -203,7 +221,8 @@ export default {
             this.viewLoading = false;            
             await this.ax_get_recom_jaccard_index(atob(text)); 
             await this.ax_get_recom_classification(atob(text));          
-            await this.ax_get_recom_co_responsibility(atob(text));            
+            await this.ax_get_recom_co_responsibility(atob(text));
+            this.ax_process_recom();           
         }
     },    
     created () {
