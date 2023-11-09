@@ -18,6 +18,6 @@ import axios from 'axios';
 import VueAxios from 'vue-axios';
 //https://www.youtube.com/watch?v=6ESNnWJFrIM
 //axios.defaults.baseURL = 'http://localhost:8000/api';
-axios.defaults.baseURL = 'https://web-production-ac252.up.railway.app/api/recommendations/1.0';
+axios.defaults.baseURL = 'https://bookrecommender-production-d36e.up.railway.app/api/recommendations/1.0';
 axios.defaults.headers.common['Authorization'] = 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY4NDcwNTE3NCwianRpIjoiNzI1MTUwNmItODBkMS00NzdmLWJmMzUtNWIwZjcyNTJmZDkyIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjEiLCJuYmYiOjE2ODQ3MDUxNzQsImV4cCI6MTcxMDYyNTE3NH0.42ODAvuEIbgmilOszio43hY6dvQ3AVGfRDPqTkE4Z4M';
 createApp(App).use(router).use(VueAxios,axios).mount('#app')
